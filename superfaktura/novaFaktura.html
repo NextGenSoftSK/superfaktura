@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+	<!--=============================== CSS, FONT, JS ======================================-->
+	<link rel="stylesheet" type="text/css" href="./assets/css/main.css" />
+	<link href="https://fonts.googleapis.com/css2?family=Mukta:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+	<script src="./assets/js/main.js" defer></script>
+	
+	<title>SuperFaktúra</title>
+</head>
+<body>
+	<div id="branding">
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+	</div>
+	<header>
+		<div class="container">
+			<div id="hero">
+				<div id="logo">
+					<a  href="./index.html">
+						<img alt="Superfaktúra logo" src="./assets/img/header/Logo_Superfaktura.svg" />
+					</a>
+				</div>
+				<div id="uMenu">
+					<div id="search" class="desktop">
+						<form action="search.html">
+							<input type="search" placeholder="Vyhľadať faktúru, firmu, kontakt..." />
+							<button type="submit"><img alt="Vyhľadať" src="./assets/img/header/Search.svg" /></button>
+						</form>
+					</div>
+					<div id="userMenu">
+						<ul>
+							<li class="firstItem desktop">
+								<img alt="Nápoveda" src="./assets/img/header/Help.svg" /><a id="help" href="help.html">Nápoveda</a>
+							</li>
+							<li class="firstItem mobile">
+								<a id="addBill" href="novaFaktura.html">
+									<img alt="Vytvoriť nový" src="./assets/img/header/mobileNav/Add.svg" />
+								</a>
+							</li>
+							<li class="hiddenAlways">
+								<a id="help" href="help.html">
+									<img alt="Nápoveda" src="./assets/img/header/Help.svg" />
+								</a>
+							</li>
+							<li class="hiddenAlways">
+								<a id="company" href="company.html">
+									<img alt="Možnosti firmy" src="./assets/img/header/Company.svg" />
+								</a>
+							</li>
+							<li class="desktop">
+								<img alt="Firma" src="./assets/img/header/Company.svg" /> The Walt Disney Company <a href="company.html"><img alt="Možnosti firmy" src="./assets/img/header/Icons.svg" /></a>
+							</li>
+							<li>
+								<a href="profile.html"><img alt="Avatar" src="./assets/img/header/Avatar.svg" /> <span class="desktop">Môj profil</span> <img alt="Môj profil" class="desktop" src="./assets/img/header/Icons.svg" /></a>
+							</li>
+							<li class="mobile">
+								<a id="showMobileMenu"><img alt="Menu" src="./assets/img/header/mobileNav/Menu.svg" /></a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="menuBlock">
+			<div id="mainMenu">
+				<div class="container">
+					<div id="main">
+						<div class="mobile mobileMenuHeader">
+							<h2 class="mobile">Menu</h2>
+							<a id="closeMobileMenu" class="mobile"><img class="closeMenu" alt="Zatvoriť menu" src="./assets/img/header/mobileNav/Close.svg" /></a>
+						</div>
+						<div id="searchMobileContainer" class="mobile">
+							<div id="searchMobile">
+								<form action="search.html">
+									<input type="search" placeholder="Vyhľadať faktúru, firmu, kontakt..." />
+									<button type="submit"><img alt="Vyhľadať" src="./assets/img/header/Search.svg" /></button>
+								</form>
+							</div>
+						</div>
+						<nav>
+							<ul>
+								<li class="firstItem">
+									<a data-subid="prehlady"><img alt="Prehľady" src="./assets/img/header/mobileNav/Prehlady.svg" class="mobile" />Prehľady</a><img alt="viac info" src="./assets/img/header/Icons.svg" class="mobile" />
+								</li>
+								<li>
+									<a data-subid="faktury"><img alt="Faktúry" src="./assets/img/header/mobileNav/Faktura.svg" class="mobile" />Faktúry</a><img alt="viac info" src="./assets/img/header/Icons.svg" class="mobile" />
+								</li>
+								<li>
+									<a data-subid="naklady"><img alt="Náklady" src="./assets/img/header/mobileNav/Naklady.svg" class="mobile" />Náklady</a><img alt="viac info" src="./assets/img/header/Icons.svg" class="mobile" />
+								</li>
+								<li>
+									<a data-subid="kontakty"><img alt="Kontakty" src="./assets/img/header/mobileNav/Contact.svg" class="mobile" />Kontakty</a><img alt="viac info" src="./assets/img/header/Icons.svg" class="mobile" />
+								</li>
+								<li>
+									<a data-subid="nastroje"><img alt="Nástroje" src="./assets/img/header/mobileNav/Tool.svg" class="mobile" />Nástroje</a><img alt="viac info" src="./assets/img/header/Icons.svg" class="mobile" />
+								</li>
+								<li class="mobile">
+									<a data-subid="help" id="helpMobile"><img alt="Nápoveda" src="./assets/img/header/mobileNav/Help.svg" />Nápoveda</a><img alt="viac info" src="./assets/img/header/Icons.svg" class="mobile" />
+								</li>
+							</ul>
+						</nav>
+						<a id="add" class="desktop" href="novaFaktura.html">
+							<img alt="Vytvoriť nový" src="./assets/img/header/Add.svg" /><span>Vytvoriť nový</span>
+						</a>
+						<div class="mobile" id="companyLink">
+							
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="subMenu">
+				<div class="container">
+					<nav>
+						<p class="mobile selectedMainMenuItem">
+							<a href="#">INSERT TEXT HERE</a>
+							<a id="closeMobileMenuAlt" class="mobile"><img class="closeMenu" alt="Zatvoriť menu" src="./assets/img/header/mobileNav/Close.svg" /></a>
+						</p>
+						<ul id="prehlady">
+							<li>
+								<a href="prehlady1.html">Prehľady 1</a>
+							</li>
+							<li>
+								<a href="prehlady2.html">Prehľady 2</a>
+							</li>
+							<li>
+								<a href="prehlady3.html">Prehľady 3</a>
+							</li>
+							<li>
+								<a href="prehlady4.html">Prehľady 4</a>
+							</li>
+						</ul>
+						<ul id="faktury">
+							<li>
+								<a href="faktury.html">Faktúry</a>
+							</li>
+							<li>
+								<a href="zalohove-faktury.html">Zálohové faktúry</a>
+							</li>
+							<li>
+								<a href="dodacie-listy.html">Dodacie listy</a>
+							</li>
+							<li>
+								<a href="prijate-objednavky.html">Prijaté objednávky</a>
+							</li>
+							<li>
+								<a href="cenove-ponuky.html">Cenové ponuky</a>
+							</li>
+							<li>
+								<a href="pravidelne.html">Pravidelné</a>
+							</li>
+							<li>
+								<a href="dobropisy.html">Dobropisy</a>
+							</li>
+							<li>
+								<a href="koncepty.html">Koncepty</a>
+							</li>
+						</ul>
+						<ul id="naklady">
+							<li>
+								<a href="naklady1.html">Náklady 1</a>
+							</li>
+							<li>
+								<a href="naklady2.html">Náklady 2</a>
+							</li>
+							<li>
+								<a href="naklady3.html">Náklady 3</a>
+							</li>
+							<li>
+								<a href="naklady4.html">Náklady 4</a>
+							</li>
+						</ul>
+						<ul id="kontakty">
+							<li>
+								<a href="kontakty1.html">Kontakty 1</a>
+							</li>
+							<li>
+								<a href="kontakty2.html">Kontakty 2</a>
+							</li>
+							<li>
+								<a href="kontakty3.html">Kontakty 3</a>
+							</li>
+						</ul>
+						<ul id="nastroje">
+							<li>
+								<a href="nastroje1.html">Nástroje 1</a>
+							</li>
+							<li>
+								<a href="nastroje2.html">Nástroje 2</a>
+							</li>
+							<li>
+								<a href="nastroje3.html">Nástroje 3</a>
+							</li>
+							<li>
+								<a href="nastroje4.html">Nástroje 4</a>
+							</li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+		</div>
+	</header>
+	<div id="companyContainer" class="mobile">
+		<ul>
+			<li>
+				<a href="company.html">
+					<span><img alt="Firma" src="./assets/img/header/Company.svg" /></span>
+					<span>The Walt Disney Company</span>
+				</a>
+				<img src="./assets/img/header/Icons.svg" alt="ikona" />
+			</li>
+		</ul>
+	</div>
+	<div id="content">
+		<div id="innerContent" class="container">
+			<h1>The Walt Disney Company</h1>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+		</div>
+	</div>
+</body>
+</html>

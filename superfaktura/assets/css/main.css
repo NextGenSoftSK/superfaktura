@@ -1,0 +1,811 @@
+/* line 1, ../../XAMPP/htdocs/superfaktura/assets/scss/main.scss */
+:root {
+  --main-color: #293040;
+  --main-menu-color: #293040;
+  --main-menu-active-color: #ffffff;
+  --sub-menu-color: #809CBF;
+  --sub-menu-active-color: #ffffff;
+  --input-color: #8394A3;
+  --body-color: #ffffff;
+  --main-menu-bg: #F2F2F4;
+  --main-menu-active-bg: #003A7F;
+  --sub-menu-bg: #003A7F;
+  --button-bg: #0A7EC7;
+  --divider: #D0D4DD;
+  --body-font: "Mukta", sans-serif;
+  --big-font-size: 2rem;
+  --h1-font-size: 1.5rem;
+  --h2-font-size: 18px;
+  --h3-font-size: 1.125rem;
+  --normal-font-size: 0.938rem;
+  --small-font-size: 0.813rem;
+  --smaller-font-size: 0.75rem;
+  --font-medium: 400;
+  --font-medium-bold: 600;
+  --font-semi-bold: 700;
+  --mb-0-25: 0.25rem;
+  --mb-0-5: 0.5rem;
+  --mb-0-75: 0.75rem;
+  --mb-1: 1rem;
+  --mb-1-5: 1.5rem;
+  --mb-2: 2rem;
+  --mb-2-5: 2.5rem;
+  --mb-3: 3rem;
+  --padding: 1.5rem;
+  --offset: 0;
+  --z-1: 1;
+  --z-100: 100;
+  --z-1000: 1000;
+}
+
+/* line 74, ../../XAMPP/htdocs/superfaktura/assets/scss/main.scss */
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+/* line 79, ../../XAMPP/htdocs/superfaktura/assets/scss/main.scss */
+li {
+  list-style: none;
+}
+
+/* line 82, ../../XAMPP/htdocs/superfaktura/assets/scss/main.scss */
+a {
+  text-decoration: none;
+  color: var(--main-color);
+}
+
+/* line 86, ../../XAMPP/htdocs/superfaktura/assets/scss/main.scss */
+body {
+  font-family: var(--body-font);
+  font-size: var(--normal-font-size);
+  background-color: var(--body-color);
+  color: var(--main-color);
+}
+
+/* line 92, ../../XAMPP/htdocs/superfaktura/assets/scss/main.scss */
+.container {
+  width: calc(min(1280px, 100vw));
+  margin: 0 auto;
+}
+
+/* line 96, ../../XAMPP/htdocs/superfaktura/assets/scss/main.scss */
+#branding {
+  width: 100%;
+  height: 2px;
+  display: flex;
+  flex-direction: row;
+  gap: 0;
+}
+
+/* line 102, ../../XAMPP/htdocs/superfaktura/assets/scss/main.scss */
+#branding div {
+  width: 25%;
+  height: 100%;
+}
+
+/* line 106, ../../XAMPP/htdocs/superfaktura/assets/scss/main.scss */
+#branding div:nth-child(4) {
+  background-color: #E03BBC;
+}
+
+/* line 109, ../../XAMPP/htdocs/superfaktura/assets/scss/main.scss */
+#branding div:nth-child(3) {
+  background-color: #00B8F0;
+}
+
+/* line 112, ../../XAMPP/htdocs/superfaktura/assets/scss/main.scss */
+#branding div:nth-child(2) {
+  background-color: #48A332;
+}
+
+/* line 115, ../../XAMPP/htdocs/superfaktura/assets/scss/main.scss */
+#branding div:nth-child(1) {
+  background-color: #FFBC03;
+}
+
+/* line 119, ../../XAMPP/htdocs/superfaktura/assets/scss/main.scss */
+header {
+  width: 100%;
+}
+
+/* line 122, ../../XAMPP/htdocs/superfaktura/assets/scss/main.scss */
+header .container #hero {
+  height: 118px;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* line 126, ../../XAMPP/htdocs/superfaktura/assets/scss/main.scss */
+header .container #hero #logo, header .container #hero #uMenu {
+  display: flex;
+  align-items: center;
+}
+
+/* line 130, ../../XAMPP/htdocs/superfaktura/assets/scss/main.scss */
+header .container #hero #logo {
+  max-width: 180px;
+}
+
+/* line 133, ../../XAMPP/htdocs/superfaktura/assets/scss/main.scss */
+header .container #hero #uMenu {
+  justify-content: space-between;
+}
+
+/* line 135, ../../XAMPP/htdocs/superfaktura/assets/scss/main.scss */
+header .container #hero #uMenu #search {
+  height: 40px;
+  width: 400px;
+  border-radius: 20px;
+  background-color: var(--main-menu-bg);
+  padding: 8px;
+  padding-left: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* line 49, ../../XAMPP/htdocs/superfaktura/assets/scss/main.scss */
+header .container #hero #uMenu #search form {
+  display: contents;
+}
+
+/* line 51, ../../XAMPP/htdocs/superfaktura/assets/scss/main.scss */
+header .container #hero #uMenu #search form input {
+  width: 350px;
+  color: var(--input-color);
+  background-color: var(--main-menu-bg);
+  outline: none;
+  border: none;
+  font-family: var(--body-font);
+  font-size: 14px;
+}
+
+/* line 60, ../../XAMPP/htdocs/superfaktura/assets/scss/main.scss */
+header .container #hero #uMenu #search form button {
+  outline: none;
+  border: none;
+  background-color: var(--button-bg);
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+}
+
+/* line 67, ../../XAMPP/htdocs/superfaktura/assets/scss/main.scss */
+header .container #hero #uMenu #search form button img {
+  width: 100%;
+  height: 100%;
+}
+
+/* line 138, ../../XAMPP/htdocs/superfaktura/assets/scss/main.scss */
+header .container #hero #uMenu #userMenu {
+  width: fit-content;
+}
+
+/* line 140, ../../XAMPP/htdocs/superfaktura/assets/scss/main.scss */
+header .container #hero #uMenu #userMenu ul {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  column-gap: .5rem;
+}
+
+/* line 145, ../../XAMPP/htdocs/superfaktura/assets/scss/main.scss */
+header .container #hero #uMenu #userMenu ul li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 8px;
+  line-height: 20px;
+  font-size: 16px;
+  font-weight: var(--font-medium);
+  border-left: 2px solid var(--main-menu-bg);
+}
+
+/* line 154, ../../XAMPP/htdocs/superfaktura/assets/scss/main.scss */
+header .container #hero #uMenu #userMenu ul li img {
+  padding: 0 5px;
+}
+
+/* line 157, ../../XAMPP/htdocs/superfaktura/assets/scss/main.scss */
+header .container #hero #uMenu #userMenu ul li a {
+  display: flex;
+}
+
+/* line 159, ../../XAMPP/htdocs/superfaktura/assets/scss/main.scss */
+header .container #hero #uMenu #userMenu ul li a img {
+  align-items: center;
+}
+
+/* line 164, ../../XAMPP/htdocs/superfaktura/assets/scss/main.scss */
+header .container #hero #uMenu #userMenu ul li.firstItem {
+  border: none;
+}
+
+/* line 167, ../../XAMPP/htdocs/superfaktura/assets/scss/main.scss */
+header .container #hero #uMenu #userMenu ul li.hiddenAlways {
+  display: none;
+}
+
+/* line 175, ../../XAMPP/htdocs/superfaktura/assets/scss/main.scss */
+header #mainMenu, header #subMenu {
+  width: 100%;
+  height: 50px;
+  position: relative;
+}
+
+/* line 180, ../../XAMPP/htdocs/superfaktura/assets/scss/main.scss */
+header #mainMenu {
+  background-color: var(--main-menu-bg);
+  z-index: 1;
+}
+
+/* line 184, ../../XAMPP/htdocs/superfaktura/assets/scss/main.scss */
+header #subMenu {
+  background-color: var(--sub-menu-bg);
+}
+
+/* line 187, ../../XAMPP/htdocs/superfaktura/assets/scss/main.scss */
+header #main {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+}
+
+/* line 192, ../../XAMPP/htdocs/superfaktura/assets/scss/main.scss */
+header #main nav ul {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+}
+
+/* line 196, ../../XAMPP/htdocs/superfaktura/assets/scss/main.scss */
+header #main nav ul li {
+  display: flex;
+  align-items: center;
+  padding: 15px;
+  height: 50px;
+  cursor: pointer;
+  transition: background-color .5s;
+}
+
+/* line 203, ../../XAMPP/htdocs/superfaktura/assets/scss/main.scss */
+header #main nav ul li a {
+  font-size: 16px;
+  font-weight: var(--font-semi-bold);
+  text-transform: uppercase;
+  transition: color .5s;
+}
+
+/* line 210, ../../XAMPP/htdocs/superfaktura/assets/scss/main.scss */
+header #main nav ul li.active, header #main nav ul li:hover {
+  background-color: var(--main-menu-active-bg);
+}
+
+/* line 212, ../../XAMPP/htdocs/superfaktura/assets/scss/main.scss */
+header #main nav ul li.active a, header #main nav ul li:hover a {
+  color: var(--main-menu-active-color);
+}
+
+/* line 218, ../../XAMPP/htdocs/superfaktura/assets/scss/main.scss */
+header #main #add {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 50px;
+  background-color: var(--button-bg);
+  font-size: 16px;
+  font-weight: var(--font-semi-bold);
+  color: var(--main-menu-active-color);
+  padding: 0 20px;
+  gap: 8px;
+  transition: background-color .5s;
+}
+
+/* line 231, ../../XAMPP/htdocs/superfaktura/assets/scss/main.scss */
+header #main #add img {
+  width: 16px;
+  aspect-ratio: 1 / 1;
+}
+
+/* line 236, ../../XAMPP/htdocs/superfaktura/assets/scss/main.scss */
+header #main #add:hover {
+  background-color: var(--sub-menu-bg);
+}
+
+/* line 240, ../../XAMPP/htdocs/superfaktura/assets/scss/main.scss */
+header #subMenu {
+  top: -50px;
+  transition: top .5s;
+}
+
+/* line 243, ../../XAMPP/htdocs/superfaktura/assets/scss/main.scss */
+header #subMenu nav {
+  height: 50px;
+}
+
+/* line 245, ../../XAMPP/htdocs/superfaktura/assets/scss/main.scss */
+header #subMenu nav ul {
+  display: none;
+  height: 100%;
+}
+
+/* line 249, ../../XAMPP/htdocs/superfaktura/assets/scss/main.scss */
+header #subMenu nav ul.active {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+}
+
+/* line 253, ../../XAMPP/htdocs/superfaktura/assets/scss/main.scss */
+header #subMenu nav ul.active li {
+  display: flex;
+  align-items: center;
+  padding: 0 15px;
+  cursor: pointer;
+}
+
+/* line 258, ../../XAMPP/htdocs/superfaktura/assets/scss/main.scss */
+header #subMenu nav ul.active li a {
+  font-weight: var(--font-semi-bold);
+  font-size: 14px;
+  color: var(--sub-menu-color);
+  transition: color .5s;
+}
+
+/* line 265, ../../XAMPP/htdocs/superfaktura/assets/scss/main.scss */
+header #subMenu nav ul.active li.active, header #subMenu nav ul.active li:hover {
+  position: relative;
+}
+
+/* line 267, ../../XAMPP/htdocs/superfaktura/assets/scss/main.scss */
+header #subMenu nav ul.active li.active a, header #subMenu nav ul.active li:hover a {
+  color: var(--sub-menu-active-color);
+}
+
+/* line 271, ../../XAMPP/htdocs/superfaktura/assets/scss/main.scss */
+header #subMenu nav ul.active li.active:after, header #subMenu nav ul.active li:hover:after {
+  position: absolute;
+  content: "";
+  width: 0px;
+  height: 0px;
+  border-top: 8px solid transparent;
+  border-right: 8px solid transparent;
+  border-bottom: 8px solid var(--sub-menu-active-color);
+  border-left: 8px solid transparent;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/* line 287, ../../XAMPP/htdocs/superfaktura/assets/scss/main.scss */
+header #subMenu.shown {
+  top: 0;
+}
+
+/* line 291, ../../XAMPP/htdocs/superfaktura/assets/scss/main.scss */
+#content {
+  padding: var(--mb-2) 0;
+}
+
+/* line 293, ../../XAMPP/htdocs/superfaktura/assets/scss/main.scss */
+#content object {
+  width: 100%;
+  height: 100%;
+}
+
+/* line 296, ../../XAMPP/htdocs/superfaktura/assets/scss/main.scss */
+#content object body {
+  width: 100%;
+  height: 100%;
+}
+
+@media screen and (min-width: 1200px) {
+  /* line 304, ../../XAMPP/htdocs/superfaktura/assets/scss/main.scss */
+  .mobile {
+    display: none !important;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  /* line 310, ../../XAMPP/htdocs/superfaktura/assets/scss/main.scss */
+  .desktop {
+    display: none !important;
+  }
+  /* line 313, ../../XAMPP/htdocs/superfaktura/assets/scss/main.scss */
+  header .container #hero {
+    padding: 0 0 0 20px;
+  }
+  /* line 316, ../../XAMPP/htdocs/superfaktura/assets/scss/main.scss */
+  #userMenu {
+    width: fit-content;
+  }
+  /* line 318, ../../XAMPP/htdocs/superfaktura/assets/scss/main.scss */
+  #userMenu ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    column-gap: .5rem;
+    margin: 0 1rem;
+  }
+  /* line 324, ../../XAMPP/htdocs/superfaktura/assets/scss/main.scss */
+  #userMenu ul li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 9px;
+    line-height: 20px;
+    width: 38px;
+    height: 38px;
+    font-weight: var(--font-medium);
+    background-color: var(--main-menu-bg);
+    border-radius: 50%;
+  }
+  /* line 335, ../../XAMPP/htdocs/superfaktura/assets/scss/main.scss */
+  #userMenu ul li img {
+    padding: 0 5px;
+  }
+  /* line 338, ../../XAMPP/htdocs/superfaktura/assets/scss/main.scss */
+  #userMenu ul li a {
+    display: flex;
+  }
+  /* line 340, ../../XAMPP/htdocs/superfaktura/assets/scss/main.scss */
+  #userMenu ul li a img {
+    align-items: center;
+  }
+  /* line 345, ../../XAMPP/htdocs/superfaktura/assets/scss/main.scss */
+  #userMenu ul li.firstItem {
+    border: none;
+  }
+  /* line 348, ../../XAMPP/htdocs/superfaktura/assets/scss/main.scss */
+  #userMenu ul li.hiddenAlways {
+    display: none;
+  }
+  /* line 353, ../../XAMPP/htdocs/superfaktura/assets/scss/main.scss */
+  #searchMobile {
+    height: 40px;
+    width: 400px;
+    border-radius: 20px;
+    background-color: var(--main-menu-bg);
+    padding: 8px;
+    padding-left: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  /* line 49, ../../XAMPP/htdocs/superfaktura/assets/scss/main.scss */
+  #searchMobile form {
+    display: contents;
+  }
+  /* line 51, ../../XAMPP/htdocs/superfaktura/assets/scss/main.scss */
+  #searchMobile form input {
+    width: 350px;
+    color: var(--input-color);
+    background-color: var(--main-menu-bg);
+    outline: none;
+    border: none;
+    font-family: var(--body-font);
+    font-size: 14px;
+  }
+  /* line 60, ../../XAMPP/htdocs/superfaktura/assets/scss/main.scss */
+  #searchMobile form button {
+    outline: none;
+    border: none;
+    background-color: var(--button-bg);
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+  }
+  /* line 67, ../../XAMPP/htdocs/superfaktura/assets/scss/main.scss */
+  #searchMobile form button img {
+    width: 100%;
+    height: 100%;
+  }
+  /* line 356, ../../XAMPP/htdocs/superfaktura/assets/scss/main.scss */
+  .mobileMenuHeader {
+    display: none !important;
+  }
+  /* line 359, ../../XAMPP/htdocs/superfaktura/assets/scss/main.scss */
+  #searchMobileContainer {
+    display: none !important;
+  }
+  /* line 362, ../../XAMPP/htdocs/superfaktura/assets/scss/main.scss */
+  #search {
+    display: flex !important;
+  }
+  /* line 366, ../../XAMPP/htdocs/superfaktura/assets/scss/main.scss */
+  #userMenu li.hidden {
+    display: flex !important;
+  }
+}
+
+@media screen and (max-width: 795px) {
+  /* line 373, ../../XAMPP/htdocs/superfaktura/assets/scss/main.scss */
+  .desktop {
+    display: none !important;
+  }
+  /* line 376, ../../XAMPP/htdocs/superfaktura/assets/scss/main.scss */
+  header, #content {
+    z-index: var(--z-1);
+    overflow-x: hidden;
+  }
+  /* line 380, ../../XAMPP/htdocs/superfaktura/assets/scss/main.scss */
+  header {
+    border-bottom: 2px solid var(--divider);
+  }
+  /* line 383, ../../XAMPP/htdocs/superfaktura/assets/scss/main.scss */
+  header #main {
+    display: block;
+  }
+  /* line 386, ../../XAMPP/htdocs/superfaktura/assets/scss/main.scss */
+  header .container #hero #logo {
+    width: 35%;
+  }
+  /* line 388, ../../XAMPP/htdocs/superfaktura/assets/scss/main.scss */
+  header .container #hero #logo img {
+    width: 100%;
+  }
+  /* line 392, ../../XAMPP/htdocs/superfaktura/assets/scss/main.scss */
+  #search {
+    display: none !important;
+  }
+  /* line 396, ../../XAMPP/htdocs/superfaktura/assets/scss/main.scss */
+  #userMenu li.hidden {
+    display: none !important;
+  }
+  /* line 400, ../../XAMPP/htdocs/superfaktura/assets/scss/main.scss */
+  #menuBlock {
+    width: 100vw;
+    height: 100vh;
+    z-index: var(--z-100);
+    background-color: var(--body-color);
+    position: fixed;
+    top: 0;
+    left: 0;
+    transform: translateX(110%);
+    transition: transform .5s;
+  }
+  /* line 410, ../../XAMPP/htdocs/superfaktura/assets/scss/main.scss */
+  #menuBlock .mobileMenuHeader {
+    padding: 0 20px;
+    display: flex !important;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    box-shadow: 0px -1px 20px -8px rgba(0, 0, 0, 0.6);
+  }
+  /* line 418, ../../XAMPP/htdocs/superfaktura/assets/scss/main.scss */
+  #menuBlock .mobileMenuHeader h2 {
+    font-size: var(--h2-font-size);
+    line-height: 22px;
+    font-weight: var(--font-medium-bold);
+  }
+  /* line 423, ../../XAMPP/htdocs/superfaktura/assets/scss/main.scss */
+  #menuBlock .mobileMenuHeader #closeMobileMenu {
+    height: 16px;
+    cursor: pointer;
+  }
+  /* line 428, ../../XAMPP/htdocs/superfaktura/assets/scss/main.scss */
+  #menuBlock #searchMobileContainer {
+    padding: 50px 20px;
+    display: flex !important;
+    width: 100%;
+    height: 80px;
+    align-items: center;
+    justify-content: center;
+  }
+  /* line 435, ../../XAMPP/htdocs/superfaktura/assets/scss/main.scss */
+  #menuBlock #searchMobileContainer #searchMobile {
+    height: 40px;
+    width: 400px;
+    border-radius: 20px;
+    background-color: var(--main-menu-bg);
+    padding: 8px;
+    padding-left: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+  }
+  /* line 49, ../../XAMPP/htdocs/superfaktura/assets/scss/main.scss */
+  #menuBlock #searchMobileContainer #searchMobile form {
+    display: contents;
+  }
+  /* line 51, ../../XAMPP/htdocs/superfaktura/assets/scss/main.scss */
+  #menuBlock #searchMobileContainer #searchMobile form input {
+    width: 350px;
+    color: var(--input-color);
+    background-color: var(--main-menu-bg);
+    outline: none;
+    border: none;
+    font-family: var(--body-font);
+    font-size: 14px;
+  }
+  /* line 60, ../../XAMPP/htdocs/superfaktura/assets/scss/main.scss */
+  #menuBlock #searchMobileContainer #searchMobile form button {
+    outline: none;
+    border: none;
+    background-color: var(--button-bg);
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+  }
+  /* line 67, ../../XAMPP/htdocs/superfaktura/assets/scss/main.scss */
+  #menuBlock #searchMobileContainer #searchMobile form button img {
+    width: 100%;
+    height: 100%;
+  }
+  /* line 438, ../../XAMPP/htdocs/superfaktura/assets/scss/main.scss */
+  #menuBlock #searchMobileContainer #searchMobile input {
+    width: calc(100% - 40px) !important;
+  }
+  /* line 443, ../../XAMPP/htdocs/superfaktura/assets/scss/main.scss */
+  #menuBlock nav {
+    padding: 0 20px 20px;
+    height: calc(100vh - 160px) !important;
+  }
+  /* line 446, ../../XAMPP/htdocs/superfaktura/assets/scss/main.scss */
+  #menuBlock nav ul {
+    display: flex;
+    flex-direction: column !important;
+  }
+  /* line 449, ../../XAMPP/htdocs/superfaktura/assets/scss/main.scss */
+  #menuBlock nav ul li {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 30px 0 !important;
+    border-top: 2px solid var(--divider);
+  }
+  /* line 458, ../../XAMPP/htdocs/superfaktura/assets/scss/main.scss */
+  #menuBlock nav ul li a img {
+    transform: translateY(5px);
+    margin-right: 15px;
+  }
+  /* line 463, ../../XAMPP/htdocs/superfaktura/assets/scss/main.scss */
+  #menuBlock nav ul li img {
+    transform: rotate(270deg);
+  }
+  /* line 467, ../../XAMPP/htdocs/superfaktura/assets/scss/main.scss */
+  #menuBlock nav ul li:hover, #menuBlock nav ul li.active {
+    background-color: transparent !important;
+  }
+  /* line 469, ../../XAMPP/htdocs/superfaktura/assets/scss/main.scss */
+  #menuBlock nav ul li:hover a, #menuBlock nav ul li.active a {
+    color: black !important;
+  }
+  /* line 473, ../../XAMPP/htdocs/superfaktura/assets/scss/main.scss */
+  #menuBlock nav ul li.firstItem {
+    border: none;
+  }
+  /* line 476, ../../XAMPP/htdocs/superfaktura/assets/scss/main.scss */
+  #menuBlock nav ul li.hiddenAlways {
+    display: none;
+  }
+  /* line 481, ../../XAMPP/htdocs/superfaktura/assets/scss/main.scss */
+  #menuBlock #mainMenu, #menuBlock #subMenu {
+    background-color: var(--body-color);
+  }
+  /* line 484, ../../XAMPP/htdocs/superfaktura/assets/scss/main.scss */
+  #menuBlock #subMenu {
+    width: 100vw;
+    height: 100vh;
+    z-index: var(--z-100);
+    position: fixed;
+    top: 0;
+    left: 0;
+    transform: translateX(110%);
+    transition: transform .5s;
+  }
+  /* line 493, ../../XAMPP/htdocs/superfaktura/assets/scss/main.scss */
+  #menuBlock #subMenu .selectedMainMenuItem {
+    padding: 20px 0;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+  }
+  /* line 498, ../../XAMPP/htdocs/superfaktura/assets/scss/main.scss */
+  #menuBlock #subMenu .selectedMainMenuItem a {
+    display: flex;
+    align-items: center;
+    font-size: var(--h3-font-size);
+    font-weight: var(--font-medium-bold);
+  }
+  /* line 503, ../../XAMPP/htdocs/superfaktura/assets/scss/main.scss */
+  #menuBlock #subMenu .selectedMainMenuItem a img {
+    transform: rotate(90deg);
+    margin-right: 10px;
+  }
+  /* line 509, ../../XAMPP/htdocs/superfaktura/assets/scss/main.scss */
+  #menuBlock #subMenu nav ul.active {
+    gap: 0;
+  }
+  /* line 511, ../../XAMPP/htdocs/superfaktura/assets/scss/main.scss */
+  #menuBlock #subMenu nav ul.active li a {
+    color: var(--main-color);
+  }
+  /* line 514, ../../XAMPP/htdocs/superfaktura/assets/scss/main.scss */
+  #menuBlock #subMenu nav ul.active li.active a {
+    color: var(--sub-menu-color) !important;
+    text-transform: uppercase;
+  }
+  /* line 520, ../../XAMPP/htdocs/superfaktura/assets/scss/main.scss */
+  #menuBlock #subMenu.shown {
+    transform: translateX(0);
+  }
+  /* line 524, ../../XAMPP/htdocs/superfaktura/assets/scss/main.scss */
+  .mobileMenuShown {
+    transform: translateX(0) !important;
+  }
+  /* line 528, ../../XAMPP/htdocs/superfaktura/assets/scss/main.scss */
+  #companyContainer {
+    height: 48px;
+    width: 100%;
+    padding: 10px 20px;
+    box-shadow: 0px 5px 10px -8px rgba(0, 0, 0, 0.6);
+  }
+  /* line 534, ../../XAMPP/htdocs/superfaktura/assets/scss/main.scss */
+  #companyContainer ul li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  /* line 539, ../../XAMPP/htdocs/superfaktura/assets/scss/main.scss */
+  #companyContainer ul li a span:has(img) {
+    display: inline-flex;
+    width: 26px;
+    height: 26px;
+    border-radius: 50%;
+    background-color: var(--main-menu-bg);
+    justify-content: center;
+    align-items: center;
+  }
+  /* line 548, ../../XAMPP/htdocs/superfaktura/assets/scss/main.scss */
+  #companyContainer ul li a img {
+    aspect-ratio: 1/1;
+    width: 14px;
+  }
+  /* line 559, ../../XAMPP/htdocs/superfaktura/assets/scss/main.scss */
+  #content {
+    height: calc(100vh - 152px);
+  }
+  /* line 561, ../../XAMPP/htdocs/superfaktura/assets/scss/main.scss */
+  #content #innerContent {
+    height: 100%;
+    width: calc(100vw - 2*var(--mb-2));
+  }
+}
+
+@media screen and (min-width: 796px) and (max-width: 1199px) {
+  /* line 570, ../../XAMPP/htdocs/superfaktura/assets/scss/main.scss */
+  li:has(#showMobileMenu) {
+    display: none !important;
+  }
+  /* line 574, ../../XAMPP/htdocs/superfaktura/assets/scss/main.scss */
+  #subMenu .selectedMainMenuItem {
+    display: none !important;
+  }
+  /* line 578, ../../XAMPP/htdocs/superfaktura/assets/scss/main.scss */
+  li.hiddenAlways {
+    display: flex !important;
+  }
+  /* line 586, ../../XAMPP/htdocs/superfaktura/assets/scss/main.scss */
+  #mainMenu nav ul li a img {
+    display: none !important;
+  }
+  /* line 590, ../../XAMPP/htdocs/superfaktura/assets/scss/main.scss */
+  #mainMenu nav ul li img {
+    display: none !important;
+  }
+  /* line 597, ../../XAMPP/htdocs/superfaktura/assets/scss/main.scss */
+  #companyContainer {
+    display: none;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */
