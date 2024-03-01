@@ -41,18 +41,6 @@ mainMenuItemLink.forEach(llink => {
 			subLink.classList.remove("active");
 			if (subLink.getAttribute("id") == destination) {
 				subLink.classList.add("active");
-				/*if (typeof lastSelectedSub != "undefined") {
-					//subLink.classList.remove("active");
-					let find;
-					let a = subLink.getElementsByTagName("a");
-					for (let i = 0; i < a.length; i++) {
-						if (a[i].getAttribute("href") == lastSelectedSub.getAttribute("href")) {
-							console.log(a);
-							find = a[i].parentElement;
-						}
-					}
-					find.classList.add("active");
-				}*/
 			}
 		});
 		subMenuItem.forEach(sItem => {
